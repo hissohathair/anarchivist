@@ -34,9 +34,10 @@ RUN /build/python.sh
 RUN /build/nodejs.sh
 
 # Enable Nginx & Passenger
-#RUN rm -f /etc/service/nginx/down
+RUN rm -f /etc/service/nginx/down
 ADD webapp.conf /etc/nginx/sites-enabled/webapp.conf
 RUN mkdir /home/app/webapp
+
 # TODO: RUN ...commands to place your web app in /home/app/webapp..
 
 
