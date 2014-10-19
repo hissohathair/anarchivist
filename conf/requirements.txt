@@ -1,0 +1,4 @@
+django
+#django-tastypie
+#django-extensions
+#django-uni-form
